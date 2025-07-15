@@ -7,3 +7,5 @@ if (-not (Get-PrinterPort -Name $ip -ErrorAction SilentlyContinue)) {
 }
 # 新增
 Add-Printer -Name "$printName" -PortName "$ip" -DriverName "Microsoft Print to PDF"
+
+Write-Host "印表機新增完成"
